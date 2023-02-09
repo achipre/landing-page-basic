@@ -1,0 +1,599 @@
+// Variables
+$primary-color: #13183F;
+$secondary-color: #FFFFFF;
+$tertiary-color: #83869A;
+$font-primary: 'Plus Jakarta Sans', sans-serif;
+// Mixin
+@mixin card {
+  box-sizing: border-box;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+  padding: 56px 28px 32px 28px;
+  background-color: $secondary-color;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px rgb(6 22 141 / 4%);
+}
+@mixin iconcard {
+  position: absolute;
+  top: -26px;
+  display: block;
+  width: 56px;
+  height: 56px;
+  content: '';
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@mixin titlecard {
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-family: $font-primary;
+  margin: 0;
+}
+@mixin info {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: $tertiary-color;
+  font-family: $font-primary;
+  margin: 16px 0 26px;
+}
+@mixin started {
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin: 0;
+  color: #f74780;
+}
+// Page
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background: linear-gradient(0deg, rgba(240,241,255,1) 0%, rgba(255,255,255,1) 100%);
+}
+header {
+  div {
+    max-width: 690px;
+    display: flex;
+    height: 80px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 16px;
+    img {
+      width: 86px;
+      margin: auto 0;
+    }
+    button {
+      width: 140px;
+      height: 48px;
+      font-family: $font-primary;
+      font-size: 1rem;
+      border: none;
+      align-self: center  ;
+      background-color: $primary-color;
+      color: $secondary-color;
+      font-weight: 700;
+      white-space: nowrap;
+      border-radius: 25px;
+  
+    }
+  }
+}
+
+main {
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  .portail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    h1 {
+      max-width: 326px;
+      margin: 22px 0 0;
+      font-family: $font-primary;
+      color: $primary-color;
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+    p {
+      max-width: 400px;
+      margin-top: 28px;
+      font-size: 1rem;
+      font-family: $font-primary;
+      color: $tertiary-color;
+      line-height: 1.6rem;
+    }
+    button {
+      width: 167px;
+      height: 56px;
+      font-family: $font-primary;
+      font-size: 1rem;
+      border: none;
+      background: linear-gradient(0deg, rgba(240,42,166,1) 0%, rgba(255,111,72,1) 100%);
+      color: $secondary-color;
+      font-weight: 700;
+      white-space: nowrap;
+      border-radius: 28px;
+      align-self: flex-start;
+      margin: 8px 0;
+    }
+    picture {
+      max-width: 370px ;
+      margin-top: 28px;
+      align-self: center;
+      box-sizing: border-box;
+      .img-mobile {
+        width: 130%;
+        height: 100%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .img-tab {
+        display: none;
+      }
+      .img-desktop {
+        display: none;
+      }
+    }
+  }
+  .all-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 11px;
+    justify-content: center;
+    margin-bottom: 80px;
+    h2 {
+      max-width: 340px;
+      height: 100%;
+      margin: 0 ;
+      padding: 56px 32px 32px;
+      font-family: $font-primary;
+      font-size: 1.5rem;
+      border: none;
+      background: linear-gradient(0deg, rgba(240,42,166,1) 0%, rgba(255,111,72,1) 100%);
+      color: $secondary-color;
+      font-weight: 900;
+      border-radius: 10px;
+      box-sizing: border-box;
+      align-self: flex-start;
+      line-height: 2rem;
+    }
+    .card-animation {
+      @include card;
+      span {
+        @include iconcard;
+        background-image: url(../img/icon-animation.svg);      
+      }
+      h3 {
+        @include titlecard;
+      }
+      p {
+        @include info;
+      }
+      p:last-child {
+        @include started;
+      }
+    }
+    .card-design{
+      @include card;
+      span{
+        @include iconcard;
+        background-image: url(../img/icon-design.svg);
+      }
+      h3 {
+        @include titlecard;
+      }
+      p {
+        @include info;
+      }
+      p:last-child {
+        @include started;
+      }
+    }
+    .photography{
+      @include card;
+      span{
+        @include iconcard;
+        background-image: url(../img/icon-photography.svg);
+      }
+      h3 {
+        @include titlecard;
+      }
+      p {
+        @include info;
+      }
+      p:last-child {
+        @include started;
+      }
+    }
+    .crypto{
+      @include card;
+      span{
+        @include iconcard;
+        background-image: url(../img/icon-crypto.svg);
+      }
+      h3 {
+        @include titlecard;
+      }
+      p {
+        @include info;
+      }
+      p:last-child {
+        @include started;
+      }
+    }
+    .business{
+      @include card;
+      span{
+        @include iconcard;
+        background-image: url(../img/icon-business.svg);
+      }
+      h3 {
+        @include titlecard;
+      }
+      p {
+        @include info;
+      }
+      p:last-child {
+        @include started;
+      }
+    }
+  }
+  
+  
+}
+
+footer {
+  padding: 0 16px;
+  background-color: $primary-color;
+  height: 180px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  .top {
+    justify-items: center;
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 86px;
+      margin: auto 0;
+    }
+    button {
+      width: 140px;
+      height: 48px;
+      font-family: $font-primary;
+      font-size: 1rem;
+      border: none;
+      align-self: center  ;
+      background: linear-gradient(0deg, rgba(72,81,255,1) 0%, rgba(240,42,166,1) 100%);
+      color: $secondary-color;
+      font-weight: 700;
+      white-space: nowrap;
+      border-radius: 25px;
+      align-self: end;
+      margin: auto 0;
+    }
+  }.owner {
+    height: 50%;
+    flex-direction: column;
+    margin: auto 0;
+    p {
+      color: $secondary-color;
+      font-size: .8rem;
+      font-family: $font-primary;
+      font-weight: 700;
+      margin: auto 0 0;
+      text-align: center;
+      padding-bottom: 8px;
+    }
+    .down{
+      display: flex;
+      height: 24px;
+      justify-content: center;
+      gap: 24px;
+      margin: 0 auto;
+  }
+  }
+  
+}
+
+// Breakpoints
+@media (min-width: 575px) {
+  header {
+    margin: 0 32px;
+    div {
+      max-width: 100%;
+      padding: 0;
+    }
+    
+  }
+  main {
+    margin: 0 32px;
+    
+  }
+  footer {
+    .top {
+      margin: 0 32px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  body {
+    header {
+      margin: 0 auto;
+      div {
+        
+        max-width: 690px;
+      }
+    }
+    main {
+      padding-top: 96px;
+      margin: 0px auto 0;
+      .portail {
+        width: 690px;
+        display: flex;
+        justify-content: center;
+        padding-top: 56px;
+        padding-bottom: 170px;
+        margin: 0 auto 12px;
+        position: relative;
+        
+        picture{
+          min-width: 680px;
+          position: absolute;
+          bottom: 0;
+          z-index: -1;
+          left: calc(50% - 20px);
+          .img-mobile {
+            display: none;
+          }
+          .img-tab {
+            display: inline-block;
+          }
+          .img-desktop {
+            display: none;
+          }
+        }
+      }
+      .all-cards {
+        gap: 56px 11px;
+      }
+    }
+    footer {
+      .top {
+        margin: 0 36px;
+      }
+    }
+
+
+  }
+}
+@media (min-width: 990px) {
+  body {
+    header {
+      margin: 0 auto;
+      div {
+        max-width:890px;
+        height: 104px;
+        img {
+          width: 112px;
+        }
+        button {
+          width: 167px;
+          height: 56px;
+          font-weight: 900;
+          font-size: 1.8em;
+          border-radius: 30px;
+        }
+      }
+    }
+    main {
+      padding-top: 70px;
+      margin: 0 auto;
+      .portail {
+        position: relative;
+        width: 890px;
+        display: flex;
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: 188px;
+        margin: 0 auto;
+        
+        h1 {
+          margin: 0;
+          font-size: 3.5rem;
+          max-width: 500px;
+        }
+        p {
+          margin-top: 29px;
+          margin-bottom: 40px;
+          max-width: 445px;
+          font-size: 1.8em;
+          line-height: 1.5em;
+        }
+        button {
+          width: 167px;
+          height: 63px;
+          margin: 0;
+          border-radius: 30px;
+          font-size: 1.8em
+        };
+        
+        picture{
+          min-width: 870px;
+          height: 938px;
+          margin-top: 0;
+          position: absolute;
+          left: calc(50% - 20px);
+          .img-mobile {
+            display: none;
+          }
+          .img-tab {
+            display: none;
+          }
+          .img-desktop {
+            display: inline-block;
+          }
+        }
+      }
+      .all-cards {
+        max-width: 890px;
+        margin: 32px auto 140px;
+        gap: 80px 30px;
+        .title-card {
+          min-height: 322px;
+          h2 {
+            
+            max-width: 350px;
+            font-size: 3.2em;
+            line-height: 1.3em;
+            box-sizing: border-box;
+            padding: 64px 32px 40px;
+          }
+        }
+        .card-animation {
+          justify-content: space-between;
+          max-width: 350px;
+          min-height: 322px;
+          padding: 64px 32px 40px;
+          h3 {
+            font-size: 2.4em;
+          }
+          p {margin: 0;
+            padding: 24px 0 26px;
+            font-size: 1.8em;
+            line-height: 1.5em;
+          }
+          p:last-child {
+            padding: 0;
+            font-size: 1.8em;
+            margin-top: auto;
+          }
+        }
+        .card-design{
+          padding: 64px 32px 40px;
+          max-width: 350px;
+          min-height: 322px;
+          h3 {
+            font-size: 2.4em;
+          }
+          p {margin: 0;
+            padding: 24px 0 26px;
+            font-size: 1.8em;
+            line-height: 1.5em;
+          }
+          p:last-child {
+            padding: 0;
+            margin-top: auto;
+            font-size: 1.8em;
+          }
+        }
+        .photography{
+          max-width: 350px;
+          min-height: 322px;
+          padding: 64px 32px 40px;
+          h3 {
+            font-size: 2.4em;
+          }
+          p {margin: 0;
+            padding: 24px 0 26px;
+            font-size: 1.8em;
+            line-height: 1.5em;
+          }
+          p:last-child {
+            padding: 0;
+            margin-top: auto;
+            font-size: 1.8em;
+          }
+        }
+        .crypto{
+          max-width: 350px;
+          min-height: 322px;
+          padding: 64px 32px 40px;
+          h3 {
+            font-size: 2.4em;
+          }
+          p {margin: 0;
+            padding: 24px 0 26px;
+            font-size: 1.8em;
+            line-height: 1.5em;
+          }
+          p:last-child {
+            padding: 0;
+            font-size: 1.8em;
+            margin-top: auto;
+          }
+        }
+        .business{
+          max-width: 350px;
+          min-height: 322px;
+          padding: 64px 32px 40px;
+          h3 {
+            font-size: 2.4em;
+          }
+          p {margin: 0;
+            padding: 24px 0 26px;
+            font-size: 1.8em;
+            line-height: 1.5em;
+          }
+          p:last-child {
+            padding: 0;
+            font-size: 1.8em;
+            margin-top: auto;
+          }
+        }
+      }
+    }
+    footer {
+      .top {
+        max-width: 890px;
+        margin: 0 auto;
+        img {
+          width: 112px;
+        }
+        button {
+          width: 167px;
+          height: 56px;
+          font-weight: 900;
+          font-size: 1.8em;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  body {
+    header {
+      margin: 0 auto;
+      div {
+        max-width:1110px;
+      }
+    }
+    main {
+      margin: 0 auto;
+      .portail {
+        position: relative;
+        width: 1110px;
+      }
+
+      .all-cards {
+        max-width:1110px;
+      }
+    }
+    footer {
+      .top {
+        max-width: 1110px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

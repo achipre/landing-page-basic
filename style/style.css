@@ -1,0 +1,657 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background: linear-gradient(0deg, rgb(240, 241, 255) 0%, rgb(255, 255, 255) 100%);
+}
+
+header div {
+  max-width: 690px;
+  display: flex;
+  height: 80px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+header div img {
+  width: 86px;
+  margin: auto 0;
+}
+header div button {
+  width: 140px;
+  height: 48px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1rem;
+  border: none;
+  align-self: center;
+  background-color: #13183F;
+  color: #FFFFFF;
+  font-weight: 700;
+  white-space: nowrap;
+  border-radius: 25px;
+}
+
+main {
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+main .portail {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+main .portail h1 {
+  max-width: 326px;
+  margin: 22px 0 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #13183F;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+main .portail p {
+  max-width: 400px;
+  margin-top: 28px;
+  font-size: 1rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #83869A;
+  line-height: 1.6rem;
+}
+main .portail button {
+  width: 167px;
+  height: 56px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1rem;
+  border: none;
+  background: linear-gradient(0deg, rgb(240, 42, 166) 0%, rgb(255, 111, 72) 100%);
+  color: #FFFFFF;
+  font-weight: 700;
+  white-space: nowrap;
+  border-radius: 28px;
+  align-self: flex-start;
+  margin: 8px 0;
+}
+main .portail picture {
+  max-width: 370px;
+  margin-top: 28px;
+  align-self: center;
+  box-sizing: border-box;
+}
+main .portail picture .img-mobile {
+  width: 130%;
+  height: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main .portail picture .img-tab {
+  display: none;
+}
+main .portail picture .img-desktop {
+  display: none;
+}
+main .all-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 11px;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+main .all-cards h2 {
+  max-width: 340px;
+  height: 100%;
+  margin: 0;
+  padding: 56px 32px 32px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.5rem;
+  border: none;
+  background: linear-gradient(0deg, rgb(240, 42, 166) 0%, rgb(255, 111, 72) 100%);
+  color: #FFFFFF;
+  font-weight: 900;
+  border-radius: 10px;
+  box-sizing: border-box;
+  align-self: flex-start;
+  line-height: 2rem;
+}
+main .all-cards .card-animation {
+  box-sizing: border-box;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+  padding: 56px 28px 32px 28px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.04);
+}
+main .all-cards .card-animation span {
+  position: absolute;
+  top: -26px;
+  display: block;
+  width: 56px;
+  height: 56px;
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-animation.svg);
+}
+main .all-cards .card-animation h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+}
+main .all-cards .card-animation p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #83869A;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 16px 0 26px;
+}
+main .all-cards .card-animation p:last-child {
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin: 0;
+  color: #f74780;
+}
+main .all-cards .card-design {
+  box-sizing: border-box;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+  padding: 56px 28px 32px 28px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.04);
+}
+main .all-cards .card-design span {
+  position: absolute;
+  top: -26px;
+  display: block;
+  width: 56px;
+  height: 56px;
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-design.svg);
+}
+main .all-cards .card-design h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+}
+main .all-cards .card-design p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #83869A;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 16px 0 26px;
+}
+main .all-cards .card-design p:last-child {
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin: 0;
+  color: #f74780;
+}
+main .all-cards .photography {
+  box-sizing: border-box;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+  padding: 56px 28px 32px 28px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.04);
+}
+main .all-cards .photography span {
+  position: absolute;
+  top: -26px;
+  display: block;
+  width: 56px;
+  height: 56px;
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-photography.svg);
+}
+main .all-cards .photography h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+}
+main .all-cards .photography p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #83869A;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 16px 0 26px;
+}
+main .all-cards .photography p:last-child {
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin: 0;
+  color: #f74780;
+}
+main .all-cards .crypto {
+  box-sizing: border-box;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+  padding: 56px 28px 32px 28px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.04);
+}
+main .all-cards .crypto span {
+  position: absolute;
+  top: -26px;
+  display: block;
+  width: 56px;
+  height: 56px;
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-crypto.svg);
+}
+main .all-cards .crypto h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+}
+main .all-cards .crypto p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #83869A;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 16px 0 26px;
+}
+main .all-cards .crypto p:last-child {
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin: 0;
+  color: #f74780;
+}
+main .all-cards .business {
+  box-sizing: border-box;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+  padding: 56px 28px 32px 28px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.04);
+}
+main .all-cards .business span {
+  position: absolute;
+  top: -26px;
+  display: block;
+  width: 56px;
+  height: 56px;
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-business.svg);
+}
+main .all-cards .business h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+}
+main .all-cards .business p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #83869A;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 16px 0 26px;
+}
+main .all-cards .business p:last-child {
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin: 0;
+  color: #f74780;
+}
+
+footer {
+  padding: 0 16px;
+  background-color: #13183F;
+  height: 180px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+footer .top {
+  justify-items: center;
+  height: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .top img {
+  width: 86px;
+  margin: auto 0;
+}
+footer .top button {
+  width: 140px;
+  height: 48px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1rem;
+  border: none;
+  align-self: center;
+  background: linear-gradient(0deg, rgb(72, 81, 255) 0%, rgb(240, 42, 166) 100%);
+  color: #FFFFFF;
+  font-weight: 700;
+  white-space: nowrap;
+  border-radius: 25px;
+  align-self: end;
+  margin: auto 0;
+}
+footer .owner {
+  height: 50%;
+  flex-direction: column;
+  margin: auto 0;
+}
+footer .owner p {
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  margin: auto 0 0;
+  text-align: center;
+  padding-bottom: 8px;
+}
+footer .owner .down {
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  gap: 24px;
+  margin: 0 auto;
+}
+
+@media (min-width: 575px) {
+  header {
+    margin: 0 32px;
+  }
+  header div {
+    max-width: 100%;
+    padding: 0;
+  }
+  main {
+    margin: 0 32px;
+  }
+  footer .top {
+    margin: 0 32px;
+  }
+}
+@media (min-width: 768px) {
+  body header {
+    margin: 0 auto;
+  }
+  body header div {
+    max-width: 690px;
+  }
+  body main {
+    padding-top: 96px;
+    margin: 0px auto 0;
+  }
+  body main .portail {
+    width: 690px;
+    display: flex;
+    justify-content: center;
+    padding-top: 56px;
+    padding-bottom: 170px;
+    margin: 0 auto 12px;
+    position: relative;
+  }
+  body main .portail picture {
+    min-width: 680px;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    left: calc(50% - 20px);
+  }
+  body main .portail picture .img-mobile {
+    display: none;
+  }
+  body main .portail picture .img-tab {
+    display: inline-block;
+  }
+  body main .portail picture .img-desktop {
+    display: none;
+  }
+  body main .all-cards {
+    gap: 56px 11px;
+  }
+  body footer .top {
+    margin: 0 36px;
+  }
+}
+@media (min-width: 990px) {
+  body header {
+    margin: 0 auto;
+  }
+  body header div {
+    max-width: 890px;
+    height: 104px;
+  }
+  body header div img {
+    width: 112px;
+  }
+  body header div button {
+    width: 167px;
+    height: 56px;
+    font-weight: 900;
+    font-size: 1.8em;
+    border-radius: 30px;
+  }
+  body main {
+    padding-top: 70px;
+    margin: 0 auto;
+  }
+  body main .portail {
+    position: relative;
+    width: 890px;
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 188px;
+    margin: 0 auto;
+  }
+  body main .portail h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    max-width: 500px;
+  }
+  body main .portail p {
+    margin-top: 29px;
+    margin-bottom: 40px;
+    max-width: 445px;
+    font-size: 1.8em;
+    line-height: 1.5em;
+  }
+  body main .portail button {
+    width: 167px;
+    height: 63px;
+    margin: 0;
+    border-radius: 30px;
+    font-size: 1.8em;
+  }
+  body main .portail picture {
+    min-width: 870px;
+    height: 938px;
+    margin-top: 0;
+    position: absolute;
+    left: calc(50% - 20px);
+  }
+  body main .portail picture .img-mobile {
+    display: none;
+  }
+  body main .portail picture .img-tab {
+    display: none;
+  }
+  body main .portail picture .img-desktop {
+    display: inline-block;
+  }
+  body main .all-cards {
+    max-width: 890px;
+    margin: 32px auto 140px;
+    gap: 80px 30px;
+  }
+  body main .all-cards .title-card {
+    min-height: 322px;
+  }
+  body main .all-cards .title-card h2 {
+    max-width: 350px;
+    font-size: 3.2em;
+    line-height: 1.3em;
+    box-sizing: border-box;
+    padding: 64px 32px 40px;
+  }
+  body main .all-cards .card-animation {
+    justify-content: space-between;
+    max-width: 350px;
+    min-height: 322px;
+    padding: 64px 32px 40px;
+  }
+  body main .all-cards .card-animation h3 {
+    font-size: 2.4em;
+  }
+  body main .all-cards .card-animation p {
+    margin: 0;
+    padding: 24px 0 26px;
+    font-size: 1.8em;
+    line-height: 1.5em;
+  }
+  body main .all-cards .card-animation p:last-child {
+    padding: 0;
+    font-size: 1.8em;
+    margin-top: auto;
+  }
+  body main .all-cards .card-design {
+    padding: 64px 32px 40px;
+    max-width: 350px;
+    min-height: 322px;
+  }
+  body main .all-cards .card-design h3 {
+    font-size: 2.4em;
+  }
+  body main .all-cards .card-design p {
+    margin: 0;
+    padding: 24px 0 26px;
+    font-size: 1.8em;
+    line-height: 1.5em;
+  }
+  body main .all-cards .card-design p:last-child {
+    padding: 0;
+    margin-top: auto;
+    font-size: 1.8em;
+  }
+  body main .all-cards .photography {
+    max-width: 350px;
+    min-height: 322px;
+    padding: 64px 32px 40px;
+  }
+  body main .all-cards .photography h3 {
+    font-size: 2.4em;
+  }
+  body main .all-cards .photography p {
+    margin: 0;
+    padding: 24px 0 26px;
+    font-size: 1.8em;
+    line-height: 1.5em;
+  }
+  body main .all-cards .photography p:last-child {
+    padding: 0;
+    margin-top: auto;
+    font-size: 1.8em;
+  }
+  body main .all-cards .crypto {
+    max-width: 350px;
+    min-height: 322px;
+    padding: 64px 32px 40px;
+  }
+  body main .all-cards .crypto h3 {
+    font-size: 2.4em;
+  }
+  body main .all-cards .crypto p {
+    margin: 0;
+    padding: 24px 0 26px;
+    font-size: 1.8em;
+    line-height: 1.5em;
+  }
+  body main .all-cards .crypto p:last-child {
+    padding: 0;
+    font-size: 1.8em;
+    margin-top: auto;
+  }
+  body main .all-cards .business {
+    max-width: 350px;
+    min-height: 322px;
+    padding: 64px 32px 40px;
+  }
+  body main .all-cards .business h3 {
+    font-size: 2.4em;
+  }
+  body main .all-cards .business p {
+    margin: 0;
+    padding: 24px 0 26px;
+    font-size: 1.8em;
+    line-height: 1.5em;
+  }
+  body main .all-cards .business p:last-child {
+    padding: 0;
+    font-size: 1.8em;
+    margin-top: auto;
+  }
+  body footer .top {
+    max-width: 890px;
+    margin: 0 auto;
+  }
+  body footer .top img {
+    width: 112px;
+  }
+  body footer .top button {
+    width: 167px;
+    height: 56px;
+    font-weight: 900;
+    font-size: 1.8em;
+    border-radius: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  body header {
+    margin: 0 auto;
+  }
+  body header div {
+    max-width: 1110px;
+  }
+  body main {
+    margin: 0 auto;
+  }
+  body main .portail {
+    position: relative;
+    width: 1110px;
+  }
+  body main .all-cards {
+    max-width: 1110px;
+  }
+  body footer .top {
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
